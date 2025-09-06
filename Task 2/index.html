@@ -1,0 +1,35 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login with Remember Me</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="loginForm">
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter password" required>
+
+        <div class="actions">
+            <label>
+            <input type="checkbox" id="rememberMe"> Remember Me
+            </label>
+            <button type="submit">Login</button>
+        </div>
+        </form>
+
+        <button id="clearBtn" style="margin-top:10px; width:100%; background:#e74c3c;">
+        Clear Remember Me
+        </button>
+
+        <div class="welcome" id="welcomeMsg"></div>
+    </div>
+    <script src="rememberme.js"></script>
+    </body>
+    </html>
